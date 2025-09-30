@@ -20,7 +20,6 @@ class Triangle extends Shape {
 }
 
 void main() {
-  print("sdfdsfsdfsdfsdafsdf");
   Rectangle rectangle = Rectangle(10.54, 234.323);
   rectangle.area();
 
