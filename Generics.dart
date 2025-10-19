@@ -1,4 +1,4 @@
-class use_of_genrics<T> {
+class use_of_genrics<T extends num> {
   T data;
   use_of_genrics(this.data);
 }
