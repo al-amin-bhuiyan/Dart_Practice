@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MD. Shobuj — Flutter Developer &amp; CS Engineer</title>
+  <meta name="description" content="Portfolio of MD. Shobuj — Junior Flutter Developer at Spark Tech Agency, B.Sc. CSE student at DUET, competitive programmer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- Particle canvas -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ── Navigation ── -->
+  <nav>
+    <span class="nav-logo">SHOBUJ</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#competitive">CP</a></li>
+      <li><a href="#leadership">Activities</a></li>
+      <li><a href="#awards">Awards</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section id="about">
+    <div id="hero">
+      <div class="hero-inner">
+        <div class="hero-badge">✨ Available for Opportunities</div>
+
+        <h1 class="hero-name">MD. SHOBUJ</h1>
+
+        <p class="hero-title">
+          <span id="typing-text"></span><span class="cursor"></span>
+        </p>
+
+        <p class="hero-desc">
+          Jr. Flutter Developer building cross-platform apps with clean architecture,
+          real-time features, and elegant UI. B.Sc. CSE student at DUET,
+          passionate about AI/ML and competitive programming.
+        </p>
+
+        <div class="hero-contacts">
+          <a class="contact-chip" href="mailto:mdshobuj204111@gmail.com">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            mdshobuj204111@gmail.com
+          </a>
+          <a class="contact-chip" href="tel:01902042000">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.01 1.19 2 2 0 012 .01h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            01902042000
+          </a>
+          <a class="contact-chip" href="https://github.com/al-amin-bhuiyan" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            al-amin-bhuiyan
+          </a>
+          <a class="contact-chip" href="https://linkedin.com/in/mdshobuj" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-outline" href="mailto:mdshobuj204111@gmail.com">Get In Touch</a>
+        </div>
+      </div>
+
+      <a class="scroll-down" href="#education" aria-label="Scroll down">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        SCROLL
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Stats Banner ── -->
+  <div class="stats-banner">
+    <div class="stat-item">
+      <div class="stat-number" data-count="800" data-suffix="+">0</div>
+      <div class="stat-label">CF Problems Solved</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="150" data-suffix="+">0</div>
+      <div class="stat-label">LeetCode Problems</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="1638">0</div>
+      <div class="stat-label">LeetCode Max Rating</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="6">0</div>
+      <div class="stat-label">Major Projects</div>
+    </div>
+    <div class="stat-item">
+      <div class="stat-number" data-count="2">0</div>
+      <div class="stat-label">Industry Experiences</div>
+    </div>
+  </div>
+
+  <!-- ── Education ── -->
+  <section id="education">
+    <div class="section-title reveal">
+      <h2>Education</h2>
+      <p>Academic journey and qualifications</p>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="card">
+          <div class="timeline-header">
+            <span class="timeline-title">Dhaka University of Engineering &amp; Technology (DUET)</span>
+            <span class="timeline-date">Sep 2021 – Aug 2025</span>
+          </div>
+          <div class="timeline-sub">B.Sc. in Computer Science &amp; Engineering</div>
+          <div class="timeline-loc">📍 Gazipur, Bangladesh</div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="card">
+          <div class="timeline-header">
+            <span class="timeline-title">Chittagong Polytechnic Institute</span>
+            <span class="timeline-date">Aug 2016 – Jan 2020</span>
+          </div>
+          <div class="timeline-sub">Diploma in Computer Technology · CGPA: 3.76 / 4.00</div>
+          <div class="timeline-loc">📍 Chittagong, Bangladesh</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Thesis ── -->
+  <section id="thesis" style="padding-top:0">
+    <div class="section-title reveal">
+      <h2>Research &amp; Thesis</h2>
+      <p>Academic research and publications</p>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="thesis-card">
+      <div class="thesis-title">
+        🔬 Developing a Dataset for Predicting Air Pollution Using IoT and Machine Learning
+      </div>
+      <ul class="timeline-list">
+        <li>Conducted research on air pollution prediction using IoT sensor data and machine learning algorithms.</li>
+        <li>Developed and curated the <a href="https://www.kaggle.com/datasets/mdshobuj/air-quality-dataset-of-bangladesh" target="_blank" rel="noopener" style="color:var(--primary)">Air Quality Dataset of Bangladesh</a>, published on Kaggle.</li>
+        <li>Focused on data collection, preprocessing, and exploratory data analysis (EDA) to enhance model accuracy and validation.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Experience ── -->
+  <section id="experience">
+    <div class="section-title reveal">
+      <h2>Experience</h2>
+      <p>Professional work and internships</p>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="card">
+          <div class="timeline-header">
+            <span class="timeline-title">Spark Tech Agency</span>
+            <span class="timeline-date">Sep 2025 – Present</span>
+          </div>
+          <div class="timeline-sub">Jr. Flutter Developer</div>
+          <div class="timeline-loc">📍 On-site</div>
+          <ul class="timeline-list">
+            <li>Developing and maintaining scalable cross-platform mobile applications using Flutter &amp; Dart.</li>
+            <li>Implementing secure payment integration using Stripe and third-party payment gateways.</li>
+            <li>Integrating Socket.IO for real-time features: live updates, instant notifications, bidirectional communication.</li>
+            <li>Collaborating with UI/UX designers to deliver responsive, user-centric interfaces.</li>
+            <li>Managing application state with GetX and ensuring seamless backend integration.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="card">
+          <div class="timeline-header">
+            <span class="timeline-title">Brain Station 23 PLC</span>
+            <span class="timeline-date">Jan 2025 – Mar 2025</span>
+          </div>
+          <div class="timeline-sub">Flutter Developer Intern</div>
+          <div class="timeline-loc">📍 Dhaka, Bangladesh</div>
+          <ul class="timeline-list">
+            <li>Completed intensive Flutter app development training.</li>
+            <li>Built production-grade apps: NewsApp, MindJournal, To-Do, E-Commerce.</li>
+            <li>Applied MVVM architecture, GetX state management, and Firebase authentication.</li>
+            <li>Integrated REST APIs, Firestore, and bKash/Nagad payment gateways.</li>
+            <li>Utilized Git &amp; GitHub for robust version control.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <section id="projects">
+    <div class="section-title reveal">
+      <h2>Projects</h2>
+      <p>Things I've built and shipped</p>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-icon">🎒</div>
+        <div class="project-name">
+          AI Bag Design
+          <a href="https://github.com/al-amin-bhuiyan/AI-Bag-Design" target="_blank" rel="noopener" title="GitHub">
+            <svg viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;color:var(--text-muted)"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.295 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+        </div>
+        <div class="project-tech">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">Dart</span>
+          <span class="tech-tag">MVC</span>
+          <span class="tech-tag">AI/ML</span>
+        </div>
+        <p class="project-desc">
+          A mobile application that helps users design bags using AI-generated images or uploaded reference images.
+          Built with MVC architecture for a structured, scalable codebase.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">💬</div>
+        <div class="project-name">Austin Small Talk</div>
+        <div class="project-tech">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">GetX</span>
+          <span class="tech-tag">GoRouter</span>
+          <span class="tech-tag">Socket.IO</span>
+          <span class="tech-tag">AI</span>
+        </div>
+        <p class="project-desc">
+          AI-based chat application where users interact with AI in custom scenarios.
+          Features real-time communication, Flutter animations, and dynamic backend/AI integration.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🌿</div>
+        <div class="project-name">Fatema Mind Glow</div>
+        <div class="project-tech">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">MVVM</span>
+          <span class="tech-tag">GetX</span>
+          <span class="tech-tag">Firebase</span>
+        </div>
+        <p class="project-desc">
+          Mental health and wellness app focused on mood tracking, self-care, and emotional well-being.
+          Clean UI/UX with reusable components, journaling, and mindfulness features.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🧠</div>
+        <div class="project-name">Mental Health App</div>
+        <div class="project-tech">
+          <span class="tech-tag">Flutter</span>
+          <span class="tech-tag">MVVM</span>
+          <span class="tech-tag">GoRouter</span>
+          <span class="tech-tag">GetX</span>
+          <span class="tech-tag">Generics</span>
+        </div>
+        <p class="project-desc">
+          Built with strict OOP principles and MVVM architecture.
+          Implements GoRouter for navigation, GetX for state management,
+          and Generics for reusable API integration.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">🏪</div>
+        <div class="project-name">Supershop Management System</div>
+        <div class="project-tech">
+          <span class="tech-tag">Java</span>
+          <span class="tech-tag">Java Swing</span>
+          <span class="tech-tag">JDBC</span>
+          <span class="tech-tag">MySQL</span>
+          <span class="tech-tag">iReport</span>
+        </div>
+        <p class="project-desc">
+          Desktop application with inventory management, billing engine,
+          and reporting features for retail supershops.
+        </p>
+      </div>
+
+      <div class="project-card">
+        <div class="project-icon">💼</div>
+        <div class="project-name">Business Management System</div>
+        <div class="project-tech">
+          <span class="tech-tag">HTML</span>
+          <span class="tech-tag">CSS</span>
+          <span class="tech-tag">PHP</span>
+          <span class="tech-tag">MySQL</span>
+        </div>
+        <p class="project-desc">
+          Web application featuring a product catalog, user accounts,
+          and order processing for complete business management.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── Skills ── -->
+  <section id="skills">
+    <div class="section-title reveal">
+      <h2>Skills</h2>
+      <p>Technologies and tools I work with</p>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-category">
+        <div class="skill-cat-title">💻 Languages</div>
+        <div class="skill-tags">
+          <span class="skill-tag">C</span>
+          <span class="skill-tag">C++</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Dart</span>
+          <span class="skill-tag">SQL</span>
+          <span class="skill-tag">PL/SQL</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">🛠️ Frameworks &amp; Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Flutter</span>
+          <span class="skill-tag">Firebase</span>
+          <span class="skill-tag">Java Swing</span>
+          <span class="skill-tag">Git</span>
+          <span class="skill-tag">GitHub</span>
+          <span class="skill-tag">Socket.IO</span>
+          <span class="skill-tag">Stripe</span>
+          <span class="skill-tag">REST API</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">🗄️ Databases</div>
+        <div class="skill-tags">
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Firestore</span>
+          <span class="skill-tag">Hive</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">⚙️ Core Strengths</div>
+        <div class="skill-tags">
+          <span class="skill-tag">DSA</span>
+          <span class="skill-tag">OOP</span>
+          <span class="skill-tag">MVVM</span>
+          <span class="skill-tag">MVC</span>
+          <span class="skill-tag">GetX</span>
+          <span class="skill-tag">GoRouter</span>
+          <span class="skill-tag">Generics</span>
+          <span class="skill-tag">API Integration</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">🤝 Soft Skills</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Team Collaboration</span>
+          <span class="skill-tag">Quick Learning</span>
+          <span class="skill-tag">Presentation</span>
+          <span class="skill-tag">Public Speaking</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <div class="skill-cat-title">🌐 Languages Known</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Bangla (Native)</span>
+          <span class="skill-tag">English (Intermediate)</span>
+          <span class="skill-tag">Arabic (Basic)</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Competitive Programming ── -->
+  <section id="competitive">
+    <div class="section-title reveal">
+      <h2>Competitive Programming</h2>
+      <p>Problem solving across platforms</p>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="cp-grid">
+      <div class="cp-card">
+        <div class="cp-platform">Codeforces</div>
+        <div class="cp-handle">al amin</div>
+        <div class="cp-rating">1228</div>
+        <div class="cp-label">Max Rating · Pupil</div>
+        <div class="cp-solved">800+ problems</div>
+      </div>
+
+      <div class="cp-card">
+        <div class="cp-platform">CodeChef</div>
+        <div class="cp-handle">mdshobuj</div>
+        <div class="cp-rating">1603</div>
+        <div class="cp-label">Max Rating</div>
+        <div class="cp-solved">100+ problems</div>
+      </div>
+
+      <div class="cp-card">
+        <div class="cp-platform">LeetCode</div>
+        <div class="cp-handle">mdshobuj204111</div>
+        <div class="cp-rating">1638</div>
+        <div class="cp-label">Max Rating</div>
+        <div class="cp-solved">150+ problems</div>
+      </div>
+
+      <div class="cp-card">
+        <div class="cp-platform">AtCoder</div>
+        <div class="cp-handle">mdshobuj</div>
+        <div class="cp-rating">145</div>
+        <div class="cp-label">Rating</div>
+        <div class="cp-solved">Active</div>
+      </div>
+
+      <div class="cp-card">
+        <div class="cp-platform">CSES</div>
+        <div class="cp-handle">—</div>
+        <div class="cp-rating">50<span style="font-size:1.2rem">+</span></div>
+        <div class="cp-label">Problems Solved</div>
+        <div class="cp-solved">Active</div>
+      </div>
+
+      <div class="cp-card">
+        <div class="cp-platform">GeeksforGeeks</div>
+        <div class="cp-handle">—</div>
+        <div class="cp-rating">54</div>
+        <div class="cp-label">Problems Solved</div>
+        <div class="cp-solved">Active</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Leadership & Awards ── -->
+  <section id="leadership">
+    <div class="section-title reveal">
+      <h2>Leadership &amp; Activities</h2>
+      <p>Community involvement and extracurriculars</p>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="list-card">
+        <h3>🏛️ Leadership Roles</h3>
+        <ul>
+          <li>Former Vice President, DUET Computer Society</li>
+          <li>Former Advisor, Gungchill DUET (Chittagong Student Welfare)</li>
+          <li>Assistant, Acting &amp; Drama and Koytuk Training Division, Srijoni (Cultural Society)</li>
+        </ul>
+      </div>
+
+      <div class="list-card">
+        <h3>📣 Events &amp; Organizing</h3>
+        <ul>
+          <li>Organizer: Seminar with Anisul Islam (Programming Hero)</li>
+          <li>Organizer: Seminar with Abdullah Al Mamun (ex-Meta)</li>
+        </ul>
+      </div>
+
+      <div class="list-card">
+        <h3>🎭 Hobbies</h3>
+        <ul>
+          <li>Mimicry &amp; Public Speaking</li>
+          <li>Photography</li>
+          <li>Quora Writing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Awards ── -->
+  <section id="awards">
+    <div class="section-title reveal">
+      <h2>Awards &amp; Achievements</h2>
+      <p>Recognition and milestones</p>
+      <div class="title-line"></div>
+    </div>
+
+    <div class="grid-2">
+      <div class="list-card">
+        <h3>🏆 Programming Contests</h3>
+        <ul>
+          <li>🥈 9th Place — Intra DUET Programming Contest (Mar 2024)</li>
+          <li>🥉 6th Place — Intra DUET Programming Contest (Feb 2022)</li>
+          <li>🎖️ Codeforces Pupil — Max rating 1228</li>
+        </ul>
+      </div>
+
+      <div class="list-card">
+        <h3>🔬 Research &amp; Publications</h3>
+        <ul>
+          <li>
+            Published <a href="https://www.kaggle.com/datasets/mdshobuj/air-quality-dataset-of-bangladesh"
+              target="_blank" rel="noopener" style="color:var(--primary)">
+              Air Quality Dataset of Bangladesh
+            </a> on Kaggle
+          </li>
+          <li>Thesis: IoT + ML for Air Pollution Prediction</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <div class="footer-links">
+      <a href="mailto:mdshobuj204111@gmail.com">Email</a>
+      <a href="https://github.com/al-amin-bhuiyan" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://linkedin.com/in/mdshobuj" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.kaggle.com/datasets/mdshobuj/air-quality-dataset-of-bangladesh" target="_blank" rel="noopener">Kaggle</a>
+    </div>
+    <p>Designed &amp; built by <strong>MD. Shobuj</strong> · &copy; <span id="year"></span></p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
